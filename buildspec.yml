@@ -2,12 +2,11 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
-      - pip install -r requirements.txt -t .
+      - pip install -r requirements.txt -t src/
   build:
     commands:
-      - echo Packaging Lambda function...
-      - zip -r lambda.zip .
+      - cd src
+      - zip -r ../lambda.zip .
 artifacts:
   files:
     - lambda.zip
