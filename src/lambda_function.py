@@ -1,1 +1,1 @@
-print("hi ashok kumar, had your lunch")
+print("hi ashok kumar")
